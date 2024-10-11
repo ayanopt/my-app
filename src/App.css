@@ -1,38 +1,69 @@
+/* App.css */
+
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+  background-image: url('../background.png');
+  height: 100vh; /* Full height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background-color: #261333; /* Dark background */
+  padding: 20px;
+  border-radius: 10px;
   color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.App-link {
-  color: #61dafb;
+p {
+  font-size: 2rem;
+  margin: 0 0 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button {
+  background-color: #75c2f1;/* Light blue button */
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+#SubmitButton {
+  background-color: #61dafb; /* Light blue background */
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px; /* Smaller padding */
+  font-size: 0.9rem; /* Smaller font size */
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+#SubmitButton:hover {
+  background-color: #21a1f1; /* Darker blue on hover */
+  transform: scale(1.02); /* Slightly enlarge on hover */
+}
+
+
+button:hover {
+  background-color: #21a1f1; /* Darker blue on hover */
+  transform: scale(1.02); /* Slightly enlarge on hover */
+}
+
+#CurrentQuestion, #CurrentAnswer {
+  margin-top: 20px;
+  font-size: 1.5rem;
+  color: #ffffff; /* Dark text color */
+}
+
+input[type='text'] { 
+  margin-top: 10px;
+  font-size: 20px; 
+}
+#Login {
+  height: 3.5lvh;
+  font-size: 18px;
 }
